@@ -1,0 +1,14 @@
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+*.db
+.env
+*.log
+.DS_Store
+.ipynb_checkpoints
+/.git
+/model_checkpoints/
+/backend/models/*.pkl  # remove if you want models NOT baked into image (uncomment to exclude)

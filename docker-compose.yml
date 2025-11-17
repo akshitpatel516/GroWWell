@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  backend:
+    image: akshit516/growwell-backend:latest
+    container_name: growwell_backend
+    ports:
+      - "8000:8000"
+    restart: always
+ 
+  frontend:
+    image: akshit516/growwell-frontend:latest
+    container_name: growwell_frontend
+    ports:
+      - "8501:8501"
+    depends_on:
+      - backend
+    restart: always
